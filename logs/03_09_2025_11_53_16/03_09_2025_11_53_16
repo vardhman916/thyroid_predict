@@ -1,0 +1,7 @@
+[2025-03-09 11:53:18,267] 9 root - INFO - The execution has started
+[2025-03-09 11:53:18,283] 26 root - INFO - reading from MYSQL database
+[2025-03-09 11:53:18,283] 36 root - INFO - Data ingestion is completed
+[2025-03-09 11:53:18,322] 71 root - INFO - reading the test and train file
+[2025-03-09 11:53:18,322] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx Smoking', 'Hx Radiothreapy', 'Thyroid Function', 'Physical Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-03-09 11:53:18,322] 47 root - INFO - Numerical Column:['Age']
+[2025-03-09 11:53:18,322] 83 root - INFO - Applying Preprocessing on training and testing

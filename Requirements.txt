@@ -4,5 +4,12 @@ matplotlib
 python-dotenv
 mysql-connector-python
 pymysql
+Flask
+xgboost
+catboost
+dill
+mlflow==2.2.2
 scikit-learn
+mlflow
+dagshub
 #e .
