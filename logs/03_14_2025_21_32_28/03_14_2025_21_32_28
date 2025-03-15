@@ -1,0 +1,26 @@
+[2025-03-14 21:32:31,246] 54 root - INFO - The execution has started
+[2025-03-14 21:32:31,261] 26 root - INFO - reading from MYSQL database
+[2025-03-14 21:32:31,261] 36 root - INFO - Data ingestion is completed
+[2025-03-14 21:32:31,277] 68 root - INFO - reading the test and train file
+[2025-03-14 21:32:31,277] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-03-14 21:32:31,277] 47 root - INFO - Numerical Column:['Age']
+[2025-03-14 21:32:31,277] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-03-14 21:32:31,309] 115 root - INFO - Saved preprocessing
+[2025-03-14 21:32:31,309] 46 root - INFO - Split training and test input data
+[2025-03-14 21:32:31,715] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-14 21:32:31,720] 107 dagshub - INFO - Accessing as vardhman916
+[2025-03-14 21:32:32,686] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-03-14 21:32:33,135] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-14 21:32:33,150] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-03-14 21:32:33,150] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-03-14 21:32:35,664] 133 root - INFO - best found model on both training and testing dataset
+[2025-03-14 21:32:35,680] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-14 21:32:35,680] 97 werkzeug - INFO -  * Debugger PIN: 455-206-252
+[2025-03-14 21:32:39,457] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:32:39] "GET / HTTP/1.1" 200 -
+[2025-03-14 21:33:15,842] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:33:15] "POST /predictdata HTTP/1.1" 200 -
+[2025-03-14 21:33:51,393] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:33:51] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[2025-03-14 21:33:51,779] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:33:51] "GET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-03-14 21:33:51,779] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:33:51] "GET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-03-14 21:33:51,849] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:33:51] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=InnhlOFwHQgsmySQx65O HTTP/1.1" 200 -
+[2025-03-14 21:33:51,860] 97 werkzeug - INFO - 127.0.0.1 - - [14/Mar/2025 21:33:51] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-03-14 21:40:36,878] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\src\\mlproject\\pipeline\\predict_pipelien.py', reloading

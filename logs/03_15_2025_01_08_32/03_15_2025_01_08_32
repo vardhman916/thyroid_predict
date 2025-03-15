@@ -1,0 +1,24 @@
+[2025-03-15 01:08:37,081] 54 root - INFO - The execution has started
+[2025-03-15 01:08:37,097] 26 root - INFO - reading from MYSQL database
+[2025-03-15 01:08:37,097] 36 root - INFO - Data ingestion is completed
+[2025-03-15 01:08:37,128] 68 root - INFO - reading the test and train file
+[2025-03-15 01:08:37,128] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-03-15 01:08:37,128] 47 root - INFO - Numerical Column:['Age']
+[2025-03-15 01:08:37,128] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-03-15 01:08:37,159] 115 root - INFO - Saved preprocessing
+[2025-03-15 01:08:37,159] 46 root - INFO - Split training and test input data
+[2025-03-15 01:08:37,672] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-15 01:08:37,682] 107 dagshub - INFO - Accessing as vardhman916
+[2025-03-15 01:08:38,775] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-03-15 01:08:39,201] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-15 01:08:39,201] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-03-15 01:08:39,201] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-03-15 01:08:41,400] 133 root - INFO - best found model on both training and testing dataset
+[2025-03-15 01:08:41,417] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-15 01:08:41,424] 97 werkzeug - INFO -  * Debugger PIN: 455-206-252
+[2025-03-15 01:08:53,158] 97 werkzeug - INFO - 127.0.0.1 - - [15/Mar/2025 01:08:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-03-15 01:09:46,089] 97 werkzeug - INFO - 127.0.0.1 - - [15/Mar/2025 01:09:46] "GET / HTTP/1.1" 200 -
+[2025-03-15 01:10:39,512] 97 werkzeug - INFO - 127.0.0.1 - - [15/Mar/2025 01:10:39] "POST /predictdata HTTP/1.1" 200 -
+[2025-03-15 01:14:24,990] 97 werkzeug - INFO - 127.0.0.1 - - [15/Mar/2025 01:14:24] "POST /predictdata HTTP/1.1" 200 -
+[2025-03-15 01:17:26,018] 97 werkzeug - INFO - 127.0.0.1 - - [15/Mar/2025 01:17:26] "POST /predictdata HTTP/1.1" 200 -
+[2025-03-15 01:20:28,621] 97 werkzeug - INFO - 127.0.0.1 - - [15/Mar/2025 01:20:28] "POST /predictdata HTTP/1.1" 200 -

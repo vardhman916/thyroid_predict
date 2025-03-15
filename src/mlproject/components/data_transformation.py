@@ -24,9 +24,9 @@ class DataTransformation:
         '''this class is responsible for data transformation'''
         try:
             numerical_columns = ['Age']
-            categorical_columns = ['Gender','Smoking','Hx Smoking',
-                                   'Hx Radiothreapy',
-                                   'Thyroid Function','Physical Examination',
+            categorical_columns = ['Gender','Smoking','Hx_Smoking',
+                                   'Hx_Radiothreapy',
+                                   'Thyroid_Function','Physical_Examination',
                                    'Adenopathy','Pathology','Focality',
                                    'Risk','T','N','M','Stage',
                                    'Response'
