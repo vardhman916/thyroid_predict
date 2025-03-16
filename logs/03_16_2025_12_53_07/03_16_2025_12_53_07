@@ -1,0 +1,20 @@
+[2025-03-16 12:53:07,699] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2025-03-16 12:53:15,768] 54 root - INFO - The execution has started
+[2025-03-16 12:53:15,768] 26 root - INFO - reading from MYSQL database
+[2025-03-16 12:53:15,783] 36 root - INFO - Data ingestion is completed
+[2025-03-16 12:53:15,799] 68 root - INFO - reading the test and train file
+[2025-03-16 12:53:15,799] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-03-16 12:53:15,799] 47 root - INFO - Numerical Column:['Age']
+[2025-03-16 12:53:15,799] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-03-16 12:53:15,819] 115 root - INFO - Saved preprocessing
+[2025-03-16 12:53:15,831] 46 root - INFO - Split training and test input data
+[2025-03-16 12:53:16,900] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-16 12:53:16,915] 107 dagshub - INFO - Accessing as vardhman916
+[2025-03-16 12:53:17,731] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-03-16 12:53:18,524] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-16 12:53:18,524] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-03-16 12:53:18,524] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-03-16 12:53:21,429] 133 root - INFO - best found model on both training and testing dataset
+[2025-03-16 12:53:21,444] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-16 12:53:21,444] 97 werkzeug - INFO -  * Debugger PIN: 100-137-609
+[2025-03-16 12:55:43,509] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\src\\mlproject\\exception.py', reloading

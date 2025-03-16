@@ -55,24 +55,24 @@ class ModelTrainer:
             y_test_numeric = encoder.fit_transform(y_test)
 
             models = {
-                'Decision_Classifier' : DecisionTreeClassifier(),
-                'Logistic_Regression' : LogisticRegression(),
-                'AdaBoost_Classifier' : AdaBoostClassifier(),
-                'Random_Classifier':RandomForestClassifier(),
+                'Logistic_Regression' : LogisticRegression(max_iter = 2000),
+                'Decision_Classifier' : DecisionTreeClassifier(random_state=42),
+                'AdaBoost_Classifier' : AdaBoostClassifier(random_state=42),
+                'Random_Classifier':RandomForestClassifier(random_state=42),
                 'KNeighborsClassifier':KNeighborsClassifier()
                 }
             
             params = {
-                'Decision_Classifier':{
-                    'criterion': ['gini', 'entropy', 'log_loss']    
-                },
                 'Logistic_Regression':{
-                    'penalty':['l1', 'l2', 'elasticnet'], 
+                    'penalty':['l1', 'l2'], 
                     'solver': ['saga']
 
                 },
+                'Decision_Classifier':{
+                    'criterion': ['gini', 'entropy', 'log_loss']    
+                },
                 'AdaBoost_Classifier':{
-                    'n_estimator':[8,16,32,64,128,256],
+                    'n_estimators':[8,16,32,64,128,256],
                     'learning_rate':[.1,.01,.05,.001]
                 },
                 'Random_Classifier':{

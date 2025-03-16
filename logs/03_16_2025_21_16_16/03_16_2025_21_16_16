@@ -1,0 +1,31 @@
+[2025-03-16 21:16:16,762] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2025-03-16 21:16:24,834] 54 root - INFO - The execution has started
+[2025-03-16 21:16:24,834] 26 root - INFO - reading from MYSQL database
+[2025-03-16 21:16:24,850] 36 root - INFO - Data ingestion is completed
+[2025-03-16 21:16:24,865] 68 root - INFO - reading the test and train file
+[2025-03-16 21:16:24,865] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-03-16 21:16:24,865] 47 root - INFO - Numerical Column:['Age']
+[2025-03-16 21:16:24,865] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-03-16 21:16:24,908] 115 root - INFO - Saved preprocessing
+[2025-03-16 21:16:24,908] 46 root - INFO - Split training and test input data
+[2025-03-16 21:17:02,520] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-16 21:17:02,536] 107 dagshub - INFO - Accessing as vardhman916
+[2025-03-16 21:17:03,314] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-03-16 21:17:04,106] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-16 21:17:04,122] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-03-16 21:17:04,122] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-03-16 21:17:07,263] 133 root - INFO - best found model on both training and testing dataset
+[2025-03-16 21:17:07,287] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-16 21:17:07,298] 97 werkzeug - INFO -  * Debugger PIN: 100-137-609
+[2025-03-16 21:17:31,022] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\__init__.py', reloading
+[2025-03-16 21:17:31,057] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\engine\\__init__.py', reloading
+[2025-03-16 21:17:31,075] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\__init__.py', reloading
+[2025-03-16 21:17:31,117] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\expression.py', reloading
+[2025-03-16 21:17:31,160] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\selectable.py', reloading
+[2025-03-16 21:17:31,256] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\roles.py', reloading
+[2025-03-16 21:17:31,304] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\elements.py', reloading
+[2025-03-16 21:17:31,389] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\annotation.py', reloading
+[2025-03-16 21:17:31,421] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\visitors.py', reloading
+[2025-03-16 21:17:31,452] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\sql\\cache_key.py', reloading
+[2025-03-16 21:17:31,483] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\util\\__init__.py', reloading
+[2025-03-16 21:17:31,526] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\sqlalchemy\\util\\langhelpers.py', reloading

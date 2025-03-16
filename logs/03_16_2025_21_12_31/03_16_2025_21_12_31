@@ -1,0 +1,23 @@
+[2025-03-16 21:12:31,652] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2025-03-16 21:12:39,526] 54 root - INFO - The execution has started
+[2025-03-16 21:12:39,534] 26 root - INFO - reading from MYSQL database
+[2025-03-16 21:12:39,541] 36 root - INFO - Data ingestion is completed
+[2025-03-16 21:12:39,557] 68 root - INFO - reading the test and train file
+[2025-03-16 21:12:39,557] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-03-16 21:12:39,557] 47 root - INFO - Numerical Column:['Age']
+[2025-03-16 21:12:39,557] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-03-16 21:12:39,572] 115 root - INFO - Saved preprocessing
+[2025-03-16 21:12:39,588] 46 root - INFO - Split training and test input data
+[2025-03-16 21:13:15,865] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-16 21:13:15,882] 107 dagshub - INFO - Accessing as vardhman916
+[2025-03-16 21:13:17,014] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-03-16 21:13:17,818] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-03-16 21:13:17,830] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-03-16 21:13:17,830] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-03-16 21:13:20,942] 133 root - INFO - best found model on both training and testing dataset
+[2025-03-16 21:13:20,980] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-03-16 21:13:20,990] 97 werkzeug - INFO -  * Debugger PIN: 100-137-609
+[2025-03-16 21:16:15,190] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\joblib\\__init__.py', reloading
+[2025-03-16 21:16:15,219] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\joblib\\memory.py', reloading
+[2025-03-16 21:16:15,262] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\joblib\\logger.py', reloading
+[2025-03-16 21:16:15,344] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\venv\\Lib\\site-packages\\numpy\\_typing\\_shape.py', reloading

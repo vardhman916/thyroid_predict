@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            object-fit:fill;
         }
         .container {
             width: 50%;
@@ -19,6 +20,13 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px 0px #000000;
+            background-image: url("{{ url_for('static', filename='images/th62.png') }}");
+            object-fit:cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            filter: brightness(50%);
+            opacity: 0.7;
         }
         input, select {
             width: 100%;
@@ -38,12 +46,13 @@
         button:hover {
             background: #218838;
         }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Thyroid Cancer Prediction</h1>
-        <form action="{{ url_for('predict_datapoints') }}" method="post">
+        <form class="forms" action="{{ url_for('predict_datapoints') }}" method="post">
             <label for="Age">Age:</label>
             <input type="number" name="Age" id="Age" required>
 
