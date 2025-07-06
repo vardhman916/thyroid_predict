@@ -1,0 +1,23 @@
+[2025-06-10 22:23:32,240] 54 root - INFO - The execution has started
+[2025-06-10 22:23:32,244] 26 root - INFO - reading from MYSQL database
+[2025-06-10 22:23:32,250] 36 root - INFO - Data ingestion is completed
+[2025-06-10 22:23:32,272] 68 root - INFO - reading the test and train file
+[2025-06-10 22:23:32,272] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-06-10 22:23:32,272] 47 root - INFO - Numerical Column:['Age']
+[2025-06-10 22:23:32,273] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-06-10 22:23:32,288] 115 root - INFO - Saved preprocessing
+[2025-06-10 22:23:32,288] 46 root - INFO - Split training and test input data
+[2025-06-10 22:24:03,788] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-06-10 22:24:03,813] 107 dagshub - INFO - Accessing as vardhman916
+[2025-06-10 22:24:04,240] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-06-10 22:24:04,587] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-06-10 22:24:04,594] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-06-10 22:24:04,594] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-06-10 22:24:06,881] 133 root - INFO - best found model on both training and testing dataset
+[2025-06-10 22:24:06,923] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-06-10 22:24:07,003] 97 werkzeug - INFO -  * Debugger PIN: 226-474-920
+[2025-06-10 22:25:50,410] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:25:50] "GET / HTTP/1.1" 200 -
+[2025-06-10 22:25:50,795] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:25:50] "GET /static/images/th62.png HTTP/1.1" 200 -
+[2025-06-10 22:25:50,809] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:25:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-06-10 22:26:30,726] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:26:30] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:26:30,741] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:26:30] "[36mGET /static/images/th62.png HTTP/1.1[0m" 304 -

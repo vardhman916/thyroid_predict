@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -189,5 +189,281 @@
 
         <h2>Prediction: {{results}}</h2>
     </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyroid Cancer Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(to right, #dbeafe, #f0f9ff);
+            color: #333;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.6rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            background-color: #f9fafb;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .result-box {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background-color: #ecfdf5;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #065f46;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+        <img src="{{ url_for('static', filename='images/OIP.jpg') }}" alt="Logo" style="height: 50px; border-radius: 8px;">
+        <h1>Thyroid Cancer Prediction</h1>
+    </div>
+</header>
+
+    <!-- <img src="/public/OIP.jpg" alt="Thyroid cancer awareness logo featuring a stylized thyroid gland in soft blue and pink tones, with the words Thyroid Cancer Awareness Month displayed below, set against a clean white background conveying a hopeful and supportive atmosphere"/> -->
+    <div class="container">
+        <form action="{{ url_for('predict_datapoints') }}" method="post">
+            <div class="form-grid">
+                <div>
+                    <label for="Age">Age</label>
+                    <input type="number" name="Age" id="Age" required>
+                </div>
+                <div>
+                    <label for="Gender">Gender</label>
+                    <select name="Gender" id="Gender" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Smoking">Smoking</label>
+                    <select name="Smoking" id="Smoking" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Hx_Smoking">History of Smoking</label>
+                    <select name="Hx_Smoking" id="Hx_Smoking" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Hx_Radiothreapy">History of Radiotherapy</label>
+                    <select name="Hx_Radiothreapy" id="Hx_Radiothreapy" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Thyroid_Function">Thyroid Function</label>
+                    <select name="Thyroid_Function" id="Thyroid_Function" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Clinical Hyperthyroidism">Clinical Hyperthyroidism</option>
+                        <option value="Euthyroid">Euthyroid</option>
+                        <option value="Subclinical Hyperthyroidism">Subclinical Hyperthyroidism</option>
+                        <option value="Clinical Hypothyroidism">Clinical Hypothyroidism</option>
+                        <option value="Subclinical Hypothyroidism">Subclinical Hypothyroidism</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Physical_Examination">Physical Examination</label>
+                    <select name="Physical_Examination" id="Physical_Examination" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Single nodular goiter-right">Single nodular goiter-right</option>
+                        <option value="Multinodular goiter">Multinodular goiter</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Single nodular goiter-left">Single nodular goiter-left</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Adenopathy">Adenopathy</label>
+                    <select name="Adenopathy" id="Adenopathy" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Bilateral">Bilateral</option>
+                        <option value="No">No</option>
+                        <option value="Left">Left</option>
+                        <option value="Extensive">Extensive</option>
+                        <option value="Right">Right</option>
+                        <option value="Posterior">Posterior</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Pathology">Pathology</label>
+                    <select name="Pathology" id="Pathology" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Micropapillary">Micropapillary</option>
+                        <option value="Papillary">Papillary</option>
+                        <option value="Hurthel cell">Hurthel cell</option>
+                        <option value="Follicular">Follicular</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Focality">Focality</label>
+                    <select name="Focality" id="Focality" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Uni-Focal">Uni-Focal</option>
+                        <option value="Multi-Focal">Multi-Focal</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Risk">Risk</label>
+                    <select name="Risk" id="Risk" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Low">Low</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="T">T (Tumor Size)</label>
+                    <select name="T" id="T" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="T1a">T1a</option>
+                        <option value="T1b">T1b</option>
+                        <option value="T2">T2</option>
+                        <option value="T3a">T3a</option>
+                        <option value="T3b">T3b</option>
+                        <option value="T4a">T4a</option>
+                        <option value="T4b">T4b</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="N">N (Lymph Node Involvement)</label>
+                    <select name="N" id="N" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="N0">N0</option>
+                        <option value="N1a">N1a</option>
+                        <option value="N1b">N1b</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="M">M (Metastasis)</label>
+                    <select name="M" id="M" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="M0">M0</option>
+                        <option value="M1">M1</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Stage">Stage</label>
+                    <select name="Stage" id="Stage" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IVA">IVA</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Response">Response</label>
+                    <select name="Response" id="Response" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Indeterminate">Indeterminate</option>
+                        <option value="Structural Incomplete">Structural Incomplete</option>
+                        <option value="Biochemical Incomplete">Biochemical Incomplete</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if results %}
+        <div class="result-box">
+            <p><strong>Prediction:</strong> {{ results }}</p>
+        </div>
+        {% endif %}
+    </div>
+
 </body>
 </html>

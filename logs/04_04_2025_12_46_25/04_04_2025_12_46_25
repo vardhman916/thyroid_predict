@@ -1,0 +1,26 @@
+[2025-04-04 12:46:26,540] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2025-04-04 12:46:33,858] 54 root - INFO - The execution has started
+[2025-04-04 12:46:33,858] 26 root - INFO - reading from MYSQL database
+[2025-04-04 12:46:33,874] 36 root - INFO - Data ingestion is completed
+[2025-04-04 12:46:33,905] 68 root - INFO - reading the test and train file
+[2025-04-04 12:46:33,905] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-04-04 12:46:33,905] 47 root - INFO - Numerical Column:['Age']
+[2025-04-04 12:46:33,905] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-04-04 12:46:33,943] 115 root - INFO - Saved preprocessing
+[2025-04-04 12:46:33,944] 46 root - INFO - Split training and test input data
+[2025-04-04 12:47:32,045] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-04 12:47:32,054] 107 dagshub - INFO - Accessing as vardhman916
+[2025-04-04 12:47:32,555] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-04-04 12:47:32,903] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-04 12:47:32,903] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-04-04 12:47:32,903] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-04-04 12:47:36,159] 133 root - INFO - best found model on both training and testing dataset
+[2025-04-04 12:47:36,191] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-04 12:47:36,222] 97 werkzeug - INFO -  * Debugger PIN: 100-137-609
+[2025-04-04 12:47:36,536] 97 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 12:47:36] "GET / HTTP/1.1" 200 -
+[2025-04-04 12:47:37,116] 97 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 12:47:37] "GET /static/images/th62.png HTTP/1.1" 200 -
+[2025-04-04 12:47:37,163] 97 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 12:47:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-04-04 12:48:47,876] 97 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 12:48:47] "POST /predictdata HTTP/1.1" 200 -
+[2025-04-04 12:48:47,907] 97 werkzeug - INFO - 127.0.0.1 - - [04/Apr/2025 12:48:47] "[36mGET /static/images/th62.png HTTP/1.1[0m" 304 -
+[2025-04-04 12:49:47,699] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\src\\mlproject\\pipeline\\predict_pipelien.py', reloading
+[2025-04-04 12:49:47,699] 97 werkzeug - INFO -  * Detected change in 'D:\\Thyroid_dieases\\src\\mlproject\\pipeline\\predict_pipelien.py', reloading

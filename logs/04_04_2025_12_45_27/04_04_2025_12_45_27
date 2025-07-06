@@ -1,0 +1,24 @@
+[2025-04-04 12:45:28,972] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2025-04-04 12:45:41,645] 54 root - INFO - The execution has started
+[2025-04-04 12:45:41,677] 26 root - INFO - reading from MYSQL database
+[2025-04-04 12:45:41,708] 36 root - INFO - Data ingestion is completed
+[2025-04-04 12:45:41,739] 68 root - INFO - reading the test and train file
+[2025-04-04 12:45:41,739] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-04-04 12:45:41,739] 47 root - INFO - Numerical Column:['Age']
+[2025-04-04 12:45:41,739] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-04-04 12:45:41,786] 115 root - INFO - Saved preprocessing
+[2025-04-04 12:45:41,802] 46 root - INFO - Split training and test input data
+[2025-04-04 12:46:20,575] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-04 12:46:20,591] 107 dagshub - INFO - Accessing as vardhman916
+[2025-04-04 12:46:21,589] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-04-04 12:46:22,066] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-04-04 12:46:22,081] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-04-04 12:46:22,081] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-04-04 12:46:25,459] 133 root - INFO - best found model on both training and testing dataset
+[2025-04-04 12:46:25,522] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.36:5000
+[2025-04-04 12:46:25,522] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2025-04-04 12:46:25,564] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+[2025-04-04 12:49:49,129] 97 werkzeug - INFO -  * Restarting with watchdog (windowsapi)

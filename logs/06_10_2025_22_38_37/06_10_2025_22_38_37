@@ -1,0 +1,45 @@
+[2025-06-10 22:38:39,923] 54 root - INFO - The execution has started
+[2025-06-10 22:38:39,923] 26 root - INFO - reading from MYSQL database
+[2025-06-10 22:38:39,923] 36 root - INFO - Data ingestion is completed
+[2025-06-10 22:38:39,955] 68 root - INFO - reading the test and train file
+[2025-06-10 22:38:39,955] 46 root - INFO - Categorical Column:['Gender', 'Smoking', 'Hx_Smoking', 'Hx_Radiothreapy', 'Thyroid_Function', 'Physical_Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
+[2025-06-10 22:38:39,955] 47 root - INFO - Numerical Column:['Age']
+[2025-06-10 22:38:39,955] 81 root - INFO - Applying Preprocessing on training and testing
+[2025-06-10 22:38:39,970] 115 root - INFO - Saved preprocessing
+[2025-06-10 22:38:39,970] 46 root - INFO - Split training and test input data
+[2025-06-10 22:39:10,822] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-06-10 22:39:10,835] 107 dagshub - INFO - Accessing as vardhman916
+[2025-06-10 22:39:11,237] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/vardhman916/thyroid_predict "HTTP/1.1 200 OK"
+[2025-06-10 22:39:11,605] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-06-10 22:39:11,613] 107 dagshub - INFO - Initialized MLflow to track repo "vardhman916/thyroid_predict"
+[2025-06-10 22:39:11,613] 107 dagshub - INFO - Repository vardhman916/thyroid_predict initialized!
+[2025-06-10 22:39:14,067] 133 root - INFO - best found model on both training and testing dataset
+[2025-06-10 22:39:14,104] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-06-10 22:39:14,169] 97 werkzeug - INFO -  * Debugger PIN: 226-474-920
+[2025-06-10 22:39:17,169] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:39:17] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:39:42,514] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:39:42] "GET / HTTP/1.1" 200 -
+[2025-06-10 22:40:16,977] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:40:16] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:41:33,569] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:41:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-10 22:47:59,194] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:47:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-10 22:49:07,055] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:49:07] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:49:10,845] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:49:10] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:49:26,417] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:49:26] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:49:26,445] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:49:26] "[33mGET /public/OIP.jpg HTTP/1.1[0m" 404 -
+[2025-06-10 22:50:01,226] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:50:01] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:50:01,235] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:50:01] "[33mGET /public/OIP.jpg HTTP/1.1[0m" 404 -
+[2025-06-10 22:50:03,759] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:50:03] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:50:03,776] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:50:03] "[33mGET /public/OIP.jpg HTTP/1.1[0m" 404 -
+[2025-06-10 22:50:07,414] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:50:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+[2025-06-10 22:50:52,590] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:50:52] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:52:29,728] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:52:29] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:52:29,744] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:52:29] "[33mGET /public/OIP.jpg HTTP/1.1[0m" 404 -
+[2025-06-10 22:59:25,114] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:59:25] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-10 22:59:25,495] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:59:25] "GET /static/images/OIP.jpg HTTP/1.1" 200 -
+[2025-06-10 22:59:36,494] 97 werkzeug - INFO - 127.0.0.1 - - [10/Jun/2025 22:59:36] "[36mGET /static/images/OIP.jpg HTTP/1.1[0m" 304 -
+[2025-06-11 01:08:18,335] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:08:18] "[36mGET /static/images/OIP.jpg HTTP/1.1[0m" 304 -
+[2025-06-11 01:09:42,739] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:09:42] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-11 01:09:42,755] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:09:42] "[36mGET /static/images/OIP.jpg HTTP/1.1[0m" 304 -
+[2025-06-11 01:10:20,644] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:10:20] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-11 01:10:20,659] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:10:20] "[36mGET /static/images/OIP.jpg HTTP/1.1[0m" 304 -
+[2025-06-11 01:10:55,821] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:10:55] "POST /predictdata HTTP/1.1" 200 -
+[2025-06-11 01:10:55,838] 97 werkzeug - INFO - 127.0.0.1 - - [11/Jun/2025 01:10:55] "[36mGET /static/images/OIP.jpg HTTP/1.1[0m" 304 -
